@@ -4,10 +4,10 @@ This is a web-based application developed for Solitaire Hotel, a boutique hotel 
 
 While in-room dining orders are traditionally placed via phone calls, this system aims to digitize and streamline the process by offering a web interface that:
 <br>
-• Reduces order miscommunication (no human error in taking orders)<br>
-•	Saves time for hotel staff (no need to answer repetitive calls)<br>
+• Reduces order miscommunication <br>
+•	Saves time for hotel staff <br>
 •	Enhances guest convenience (visual menu, real-time tracking, no waiting)<br>
-•	Enables digital order history, analytics, and efficiency tracking
+
 <br>
 
 FEATURES:<br>
