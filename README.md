@@ -25,7 +25,7 @@ FEATURES:
  Delete discontinued menu items or completed orders (Delete)
 
 
-Frontend : HTML , CSS , JAVASCRIPT
-Backend : Node.js with Express.js
+Frontend : HTML , CSS , JAVASCRIPT ; 
+Backend : Node.js with Express.js ;
 Data : JSON files
 
