@@ -1,6 +1,6 @@
 # Sem01Project
 In-Room Dining Manager: Hotel Food Ordering System 
-This is a web-based application developed for Solitaire Hotel, a boutique hotel in Bangkok, Thailand employing around 50-100 staff members. The system allows hotel guests to order food digitally from their rooms, offering an alternative to traditional phone-based room service. Guests can browse the menu, place orders, and track their status in real time, while hotel staff can manage menu items and update order statuses efficiently.
+This is a web-based application developed for Solitaire Hotel, a boutique hotel in Dehradun, Uttarakhand employing around 50-100 staff members. The system allows hotel guests to order food digitally from their rooms, offering an alternative to traditional phone-based room service. Guests can browse the menu, place orders, and track their status in real time, while hotel staff can manage menu items and update order statuses efficiently.
 
 While in-room dining orders are traditionally placed via phone calls, this system aims to digitize and streamline the process by offering a web interface that:
 •	Reduces order miscommunication (no human error in taking orders)
