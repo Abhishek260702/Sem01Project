@@ -10,15 +10,18 @@ While in-room dining orders are traditionally placed via phone calls, this syste
 
 FEATURES:
 1.Guest Side
-a. View menu items (Read)
-b. Place food orders (Create)
-c. Cancel or update orders (Delete / Update)
+
+ View menu items (Read),
+ Place food orders (Create),
+ Cancel or update orders (Delete / Update).
+ 
 
 2.Staff Side
-a. Add new food items to digital menu (Create)
-b. View all orders and menu items (Read)
-c. Update order status,price,availability. (Update)
-d. Delete discontinued menu items or completed orders (Delete)
+
+ Add new food items to digital menu (Create),
+ View all orders and menu items (Read),
+ Update order status,price,availability. (Update) ,
+ Delete discontinued menu items or completed orders (Delete)
 
 
 Frontend : HTML ,CSS,JAVASCRIPT
