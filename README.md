@@ -9,6 +9,7 @@ While in-room dining orders are traditionally placed via phone calls, this syste
 •	Enables digital order history, analytics, and efficiency tracking
 
 FEATURES:
+
 1.Guest Side
 
  View menu items (Read),
@@ -24,7 +25,7 @@ FEATURES:
  Delete discontinued menu items or completed orders (Delete)
 
 
-Frontend : HTML ,CSS,JAVASCRIPT
+Frontend : HTML , CSS , JAVASCRIPT
 Backend : Node.js with Express.js
 Data : JSON files
 
