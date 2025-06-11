@@ -9,23 +9,24 @@ While in-room dining orders are traditionally placed via phone calls, this syste
 •	Enhances guest convenience (visual menu, real-time tracking, no waiting)<br>
 •	Enables digital order history, analytics, and efficiency tracking
 <br>
+
 FEATURES:<br>
 
 
 1.Staff Side<br>
 
- Add new food items to digital menu (Create),
- View all orders and menu items (Read),
- Update order status,price,availability. (Update) ,
- Delete discontinued menu items or completed orders (Delete)
+ a. Add new food items to digital menu (Create)<br>
+ b. View all orders and menu items (Read)<br>
+ c. Update order status,price,availability. (Update) <br>
+ d. Delete discontinued menu items or completed orders <br>
 
 
 <br>
 2.Guest Side <br>
 
- View menu items (Read),
- Place food orders (Create),
- Cancel or update orders (Delete / Update).
+ a. View menu items (Read)<br>
+ b. Place food orders (Create)<br>
+ c. Cancel or update orders (Delete / Update)<br>
  
 <br>
 
