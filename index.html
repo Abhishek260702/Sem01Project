@@ -4,18 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Staff Menu management</title>
     <h1> Solitaire Hotel</h1>
-    <p>Login Page</p>
-    <style>
-
-    </style>
-</head>
-
+    <h2>Staff Menu Management</h2>
 <body>
-    <Script>
+    <form>
+    <label>
+      Food Name:
+      <input type="text" required />
+    </label>
 
-    </Script>
+    <label>
+      Description:
+     <textarea required></textarea>
+    </label>
+
+    <label>
+      Price (€):
+      <input type="number"/>
+    </label>
+    <button type="submit">Add / Update Item</button>
+
+</form>
+    <table>
+    <thead>
+      <tr>
+        <th scope="col">Food Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Price (€)</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+  </table>
+   <div class="button">
+        <button class="create-Button">Create</button>
+        <button class="edit-Button">Edit</button>
+        <button class="delete-Button">Delete</button>
+    </div>
+</head>
     
 </body>
 
