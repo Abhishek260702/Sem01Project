@@ -5,9 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staff Menu management</title>
+    <style>
+       h1 {
+            background-color: #f90000;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+       h2 {
+            background-color: #6519197a;
+            text-align: center;
+        }
+         table {
+            width: 50%;
+            border: 2px solid black;
+            border-collapse: collapse;     
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 5px;
+            font-weight: bold;
+        }
+        .button {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .create-Button {
+            background-color: orange;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .create-Button:hover {
+            background-color: rgb(235, 97, 47);
+            transform: scale(1.06);
+        }
+        .edit-Button {
+            background-color: #ffffff;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .edit-Button:hover {
+            background-color: #d1a99a;
+            transform: scale(1.06);
+        }
+        .delete-Button {
+            background-color: #197d0b;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .delete-Button:hover {
+            background-color: rgb(13, 104, 4);
+            transform: scale(1.06);
+        }
+    </style>
+</head>
+<body>
     <h1> Solitaire Hotel</h1>
     <h2>Staff Menu Management</h2>
-<body>
     <form>
     <label>
       Food Name:
@@ -35,14 +91,16 @@
         <th>Actions</th>
       </tr>
     </thead>
+        <tbody></tbody>
   </table>
    <div class="button">
         <button class="create-Button">Create</button>
         <button class="edit-Button">Edit</button>
         <button class="delete-Button">Delete</button>
     </div>
-</head>
-    
+   <script>
+       
+   </script>
 </body>
 
 </html>
