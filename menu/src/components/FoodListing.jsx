@@ -9,5 +9,21 @@ const FoodListing = () => {
         price: "" ,
         desc: "",
     })
-    
+const menu = async () => {
+        try {
+            const data = await fetch("http://localhost:3000/menu");
+            const response = await data.json();
+            console.log(response)
+            setFood(response)
+        }
+        catch (err) {
+            console.log(err);
+
+        }
+    }
+     useEffect(() => {
+        menu();
+    }, [])
+
+
 }
