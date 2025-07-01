@@ -44,7 +44,21 @@ const FoodListing = () => {
 
     }
     catch(err){
-console.log("error in adding food")
+  console.log("error in adding food")
     }
- }
+  }
 }
+const handleDelete = async(id) =>{
+try{
+    const res = await fetch(`http://localhost:3000/menu/${id}`,{
+       method : "DELETE" 
+    })
+    alert("Item Deleted")
+}
+catch(err){
+    console.log(err)
+}
+
+}
+
+
