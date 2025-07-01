@@ -25,5 +25,26 @@ const FoodListing = () => {
         menu();
     }, [])
 
-const  
+ const handleOnClick = async () =>{
+    if(!formData.foodName || !formData.price   ){
+        return alert("food name or price not entered")
+    }
+    try{
+        const res = await fetch("https://localhost:3000/newfood",{
+          method : "POST",
+          headers : {"Content-Type":"application/json"},//teell type is json only  
+        body:JSON.stringify(formData) //convert to string because http accepts string only
+        });
+        const result = await res.json();
+        console.log("successfully sent" , result);
+        alert("food added !!")
+
+        //reset form
+        setFormData({foodName :"", price :"", desc:""});
+
+    }
+    catch(err){
+console.log("error in adding food")
+    }
+ }
 }
