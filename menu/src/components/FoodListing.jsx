@@ -9,7 +9,7 @@ const FoodListing = () => {
         price: "" ,
         desc: "",
     })
-const menu = async () => {
+ const menu = async () => {
         try {
             const data = await fetch("http://localhost:3000/menu");
             const response = await data.json();
@@ -25,5 +25,5 @@ const menu = async () => {
         menu();
     }, [])
 
-
+const  
 }
