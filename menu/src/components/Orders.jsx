@@ -50,4 +50,46 @@ const handleSubmit = async () => {
     useEffect(() => {
         fetchOrders();
     }, [])
+
+    return (
+    <>
+        <div className="main">
+            <div className="order-info">
+                <h2>Food Name</h2>
+                <input type="text" name="foodName" value={currentOrder.foodName} onChange={(e) => handleInputChange(e)} />
+                <h2>Quantity</h2>
+                <input type="text" name="quantity" value={currentOrder.quantity} onChange={(e) => handleInputChange(e)} />
+                <h2>Price</h2>
+                <input type="text" name="price" value={currentOrder.price} onChange={(e) => handleInputChange(e)} />
+                <button onClick={() => handleSubmit()}>Add Order</button>
+            </div></div>
+
+        <div className="order-dashboard">
+            {givenOrders.map((order, index) => (<ul>
+                <div className="order-card" key={order._id}>
+                    <h3>Order #{index + 1}</h3>
+                    <p><strong>Order ID:</strong> {order._id}</p>
+                    <p><strong>Date:</strong> {new Date(order.createdAt).toLocaleString()}</p>
+                    <p><strong>Total Items:</strong> {order.totalItems}</p>
+                    <p><strong>Total Price:</strong> €{order.netPrice}</p>
+
+                    {/* {order.items.map( (ele ,index)=> (<ul>
+                        <li key={index}> foodname :{ele.items.foodName}</li>
+                    </ul>))} */}
+                    <ul>
+        {order.items.map((item, i) => (
+          <li key={item._id}>
+            {item.foodName} × {item.quantity} = €{item.subtotal}
+          </li>
+        ))}
+      </ul>
+                </div>
+
+
+            </ul>
+            ))}
+        </div>
+    </>
+    )
 }
+export default Orders
