@@ -3,6 +3,8 @@ import './FoodListing.css';
 
 const FoodListing = () => {
 
+
+
     const [food, setFood] = useState([]);
     const [formData, setFormData] = useState({
         foodName: "",
@@ -30,7 +32,7 @@ const FoodListing = () => {
             return alert("food name or price not entered")
         }
         try {
-            const res = await fetch("https://localhost:3000/newfood", {
+            const res = await fetch("http://localhost:3000/newfood", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },//teell type is json only  
                 body: JSON.stringify(formData) //convert to string because http accepts string only
@@ -47,18 +49,18 @@ const FoodListing = () => {
             console.log("error in adding food")
         }
     }
-}
-const handleDelete = async (id) => {
-    try {
-        const res = await fetch(`http://localhost:3000/menu/${id}`, {
-            method: "DELETE"
-        })
-        alert("Item Deleted")
-    }
-    catch (err) {
-        console.log(err)
-    }
 
+    const handleDelete = async (id) => {
+        try {
+            const res = await fetch(`http://localhost:3000/menu/${id}`, {
+                method: "DELETE"
+            })
+            alert("Item Deleted")
+        }
+        catch (err) {
+            console.log(err)
+        }
+    }
     return (
         <>
             <div className="menu-container">
@@ -67,22 +69,23 @@ const handleDelete = async (id) => {
                         {food.map((item, index) => (
                             <div key={index} className='menu-card'>
                                 <h2 className='food-name'>{item.foodName}</h2>
-                                <p className='food-price'>Price:{item.price}</p>
+                                <p className='food-price'>Price: €{item.price}</p>
                                 <p className='food-desc'>description:  {item.desc}</p>
-                                <button onClick={ ()=> handleDelete(item._id)}>Remove from Menu</button>
-                                
+                                <button onClick={() => handleDelete(item._id)}>Remove from Menu</button>
+
                             </div>
                         ))}
                     </div>
                     <div className="form-Fields">
-                        <input type="text" placeholder='Enter Food Name' value ={formData.foodName} onChange={(e) => setFormData({...formData , foodName : e.target.value})} />
-                        <input type="text" placeholder='Enter Food Price' value ={formData.price} onChange={(e)=>setFormData({...formData , price : e.target.value})} />
-                        <input type="text" placeholder='Enter Food Desc' value ={formData.desc} onChange={(e)=>setFormData({...formData , desc : e.target.value})} /> 
-                        <button onClick={handleOnClick}>Add Item</button> 
+                        <input type="text" placeholder='Enter Food Name' value={formData.foodName} onChange={(e) => setFormData({ ...formData, foodName: e.target.value })} />
+                        <input type="text" placeholder='Enter Food Price' value={formData.price} onChange={(e) => setFormData({ ...formData, price: e.target.value })} />
+                        <input type="text" placeholder='Enter Food Desc' value={formData.desc} onChange={(e) => setFormData({ ...formData, desc: e.target.value })} />
+                        <button onClick={handleOnClick}>Add Item</button>
                     </div>
-                 </div>
-             </div>
+                </div>
+            </div>
         </>
     )
+
 }
 export default FoodListing
