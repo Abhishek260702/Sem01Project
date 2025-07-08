@@ -6,104 +6,124 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fffaf3;
-  color: #333;
-  line-height: 1.6;
+  font-family: 'Georgia', serif;
+  background-color: #f38b4f51;
+  color: #3b2f2f;
+  line-height: 1.7;
 }
 
 /* Header */
 .main-header {
-  background-color: #e65100;
-  color: white;
-  padding: 1rem 2rem;
+  background-color: #eba78370; /* Royal orange-brown */
+  color: #860303; /* Royal yellow */
+  padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
-.tagline {
-  color: #ffd180; /* light orange */
-  font-style: italic;
-  font-size: 1.1rem;
-  margin-top: 0.3rem;
-}
+
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
 }
 
 .logo span {
-  color: #ffd180;
+  color: #ff0000;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #8c0303da;
 }
 
 .navbar a {
-  color: white;
+  color: #a70101cc;
   text-decoration: none;
-  margin-left: 1.5rem;
-  font-weight: 500;
+  margin-left: 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  color: #ffecb3;
 }
 
 /* Hero Section */
 .hero {
-  background: url('hotel-bg.jpg') no-repeat center center/cover;
+  background-color: #ffbc746f; /* plain bright yellow */
   height: 90vh;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 2rem;
   position: relative;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(230, 81, 0, 0.6);
+  color: #4e342e; /* rich dark brown for text */
+  font-family: 'Georgia', serif;
 }
 
 .hero-text {
-  position: relative;
-  z-index: 2;
+  max-width: 800px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 6vw, 4rem);
   margin-bottom: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
 }
 
 .hero-text p {
-  font-size: 1.3rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
   margin-bottom: 2rem;
+  font-style: italic;
+  font-weight: 500;
 }
 
+/* Buttons */
 .btn {
-  background-color: #ff6f00;
-  color: white;
-  padding: 0.8rem 1.5rem;
+  background-color: #ffb300;
+  color: #000000;
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(230, 81, 0, 0.4);
 }
 
 .btn:hover {
-  background-color: #e65100;
+  background-color: #ffa000;
+  transform: scale(1.05);
+  color: #4e342e;
 }
 
-/* Sections */
-.about, .features, .contact {
-  padding: 3rem 2rem;
+/* About, Features, Contact Sections */
+section {
+  padding: 4rem 2rem;
   text-align: center;
 }
 
-.about h2, .features h2, .contact h2 {
-  color: #e65100;
+section h2 {
+  color: #a04000;
+  font-size: 2rem;
   margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #5d4037;
 }
 
 /* Feature Cards */
@@ -117,17 +137,15 @@ body {
 
 .card {
   background-color: #fff3e0;
-  padding: 1.5rem;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1.8rem;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  color: #5c3d00;
+  transition: transform 0.3s ease;
 }
 
-/* Footer */
-footer {
-  background-color: #e65100;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+.card:hover {
+  transform: translateY(-10px);
 }
+

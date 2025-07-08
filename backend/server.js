@@ -93,15 +93,19 @@ app.get("/showorder" ,async (req,res)=> {
     }
 })
 
-
-
-
-
+// Update a food item by ID
+app.put("/menu/:id", async (req, res) => {
+  const id = req.params.id;
+  const updateData = req.body;
+  try {
+    const updatedFood = await food.findByIdAndUpdate(id, updateData, { new: true });
+    if (!updatedFood) return res.status(404).json({ message: "Food item not found" });
+    res.status(200).json(updatedFood);
+  } catch (err) {
+    res.status(500).json({ message: "Error updating food item", error: err.message });
+  }
+});
 
 app.listen(3000 , ()=>{
     console.log("server working on 3000")
 });
-
-
-
-

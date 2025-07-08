@@ -48,11 +48,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="contact" id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: info@hotelsolitaire.com | Phone: +11111111111</p>
-        <p>Haridwar Bypass Rd,Dehradun, Uttarakhand 248001, India</p>
-      </section>
+     
 
       
     </>
