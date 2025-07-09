@@ -156,3 +156,42 @@
     margin-bottom: 40px;
   }
 }
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.edit-form input {
+  padding: 10px 14px;
+  border: 2px solid #ffd180;
+  border-radius: 10px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.edit-form input:focus {
+  border-color: #ff9800;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 152, 0, 0.4);
+}
+
+.edit-form button {
+  padding: 10px;
+  background-color: #ff9800;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px #ff9800;
+  transition: background-color 0.3s ease;
+}
+
+.edit-form button:hover {
+  background-color: #ff9800;
+}
+

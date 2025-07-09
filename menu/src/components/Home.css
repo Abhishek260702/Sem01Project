@@ -1,4 +1,4 @@
-/* Reset & Base */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +7,15 @@
 
 body {
   font-family: 'Georgia', serif;
-  background-color: #f38b4f51;
-  color: #3b2f2f;
+  background-color: #ffffff51;
+  color: #fffefe;
   line-height: 1.7;
 }
 
-/* Header */
+
 .main-header {
-  background-color: #eba78370; /* Royal orange-brown */
-  color: #860303; /* Royal yellow */
+  background-color: #e9e4d8; 
+  color: #000000; 
   padding: 1.5rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -54,7 +54,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: #ffbc746f; /* plain bright yellow */
+  background-color: #e1924dc7; 
   height: 90vh;
   display: flex;
   align-items: center;
@@ -62,7 +62,7 @@ body {
   text-align: center;
   padding: 0 2rem;
   position: relative;
-  color: #4e342e; /* rich dark brown for text */
+  color: #000000; /* rich dark brown for text */
   font-family: 'Georgia', serif;
 }
 
