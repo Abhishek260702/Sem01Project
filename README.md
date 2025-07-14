@@ -35,7 +35,13 @@ The project enables hotel staff to:<br>
 2. Express.js
 
 **Data Storage:**
-1. JSON file 
+1. JSON file
+
+**Future Improvemenets:**
+1.Add guest-side ordering interface
+2.Implement user authentication and staff roles
+3.Enable image uploads for menu items
+4.Add category-based filtering
 
 **About The Solitaire Hotel, Dehradun**
 
