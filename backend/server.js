@@ -36,7 +36,7 @@ app.delete("/menu/:id" , async(req,res)=> {
       const deletedItem =  await food.findByIdAndDelete(id);
     if (!deletedItem) return res.status(404).json({message : "Food item Not found"});
 
-    res.status(200).json({ message: 'Food item deleted', deletedItem });
+   res.status(200).json({ message: 'Food item deleted', deletedItem });
     }
     catch(err){
     res.status(500).json({ message: 'Error deleting food item', error: err.message });
@@ -106,6 +106,10 @@ app.put("/menu/:id", async (req, res) => {
   }
 });
 
-app.listen(3000 , ()=>{
-    console.log("server working on 3000")
-});
+if (require.main === module) {
+    app.listen(3000, () => {
+        console.log("server working on 3000");
+    });
+}
+
+module.exports = app;
